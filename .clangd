@@ -1,0 +1,12 @@
+CompileFlags:
+  Add:  
+    - -std=c99  
+    - -Id:/ProgrStuff/raylib/raylib/src  
+    - -Wall
+    - -Ld:/ProgrStuff/raylib/raylib/src/libraylib.a
+    - -lraylib
+    - -lopengl32
+    - -lgdi32
+Diagnostics:  
+  ClangTidy:  
+    Checks: "bugprone-*, performance-*"
